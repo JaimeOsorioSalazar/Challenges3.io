@@ -47,3 +47,8 @@ div.centerP{
 div.item_center>span{
     color: rgb(177, 141, 243);
 }
+/* Posterior carta principal */
+div.item_status{
+    font-weight: 800;
+    font-size: 40px;
+}
