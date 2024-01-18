@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -13,6 +14,8 @@ body{
 body>div.card{
     display: flex;
     flex-direction: row;
+    box-shadow: 5px 10px 40px rgb(107, 107, 255);
+    border-radius: 20px;
     /* border: 5px solid black; */
 }
 /* Main Card */
@@ -70,8 +73,8 @@ div.card_second{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 0 10px 10px 0 ;
-    border: 1px solid red ;
+    border-radius: 0 20px 20px 0 ;
+    /* border: 1px solid red ; */
 }
 div.card_second>div.item{
     padding: 10px;
