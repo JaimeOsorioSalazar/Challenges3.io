@@ -32,10 +32,10 @@
 
   /* Primary */
 
---Light_red: hsl(0, 100%, 67%);
---Orangey_yellow: hsl(39, 100%, 56%);
---Green_teal: hsl(166, 100%, 37%);
---Cobalt_blue: hsl(234, 85%, 45%);
+  --Light_red: hsl(0, 100%, 67%);
+  --Orangey_yellow: hsl(39, 100%, 56%);
+  --Green_teal: hsl(166, 100%, 37%);
+  --Cobalt_blue: hsl(234, 85%, 45%);
 }
 body {
   font-family: "Hanken Grotesk", sans-serif;
@@ -46,7 +46,8 @@ body {
   justify-content: center;
 }
 /* Card */
-body>div.card {
+body > div.card {
+    height: 460px;
   display: flex;
   flex-direction: row;
   box-shadow: 5px 10px 40px var(--Pale_blue);
@@ -55,20 +56,24 @@ body>div.card {
 }
 /* Main Card */
 div.card_main {
-  height: 500px;
+  height: auto;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   color: var(--White);
   border-radius: 20px;
-  background:linear-gradient(to top, var(--Light_royal_blue_background),var(--Light_slate_blue_background));
+  background: linear-gradient(
+    to top,
+    var(--Light_royal_blue_background),
+    var(--Light_slate_blue_background)
+  );
 }
 div.item_Tittle {
   font-weight: 600;
   font-size: 18px;
-  color: rgb(177, 141, 243);
+  color: var(--Light_lavender);
 }
 /* Circulo central */
 div.item_center {
@@ -82,7 +87,11 @@ div.item_center {
   font-size: 18px;
   color: var(--White);
   border-radius: 50%;
-  background: linear-gradient(to bottom, var(--Violet_blue_circle), var(--Persian_blue_circle));
+  background: linear-gradient(
+    to bottom,
+    var(--Violet_blue_circle),
+    var(--Persian_blue_circle)
+  );
 }
 div.centerP {
   font-size: 70px;
@@ -92,12 +101,14 @@ div.item_center > span {
 }
 /* Posterior carta principal */
 div.item_status {
-  font-weight: 800;
-  font-size: 40px;
+    padding: 0;
+  font-weight: 600;
+  font-size: 30px;
 }
 div.item_Text {
+  width: 70%;
   text-align: center;
-  color: rgb(177, 141, 243);
+  color: var(--Light_lavender);
 }
 /* second card */
 div.card_second {
