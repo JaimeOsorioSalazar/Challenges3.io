@@ -1,96 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* 
+<uniquifier>: Use a uniquifier for the class name
+<weight>: Use a value from 100 to 900
+
+.hanken-grotesk-<uniquifier> {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+:root {
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale_blue: hsl(221, 100%, 96%);
+  --Light_lavender: hsl(241, 100%, 89%);
+  --Dark_gray_blue: hsl(224, 30%, 27%);
+
+  /* Gradients */
+  --Light_slate_blue_background: hsl(252, 100%, 67%);
+  --Light_royal_blue_background: hsl(241, 81%, 54%);
+
+  --Violet_blue_circle: hsla(256, 72%, 46%, 1);
+  --Persian_blue_circle: hsla(241, 72%, 46%, 0);
+
+  /* Primary */
+
+--Light_red: hsl(0, 100%, 67%);
+--Orangey_yellow: hsl(39, 100%, 56%);
+--Green_teal: hsl(166, 100%, 37%);
+--Cobalt_blue: hsl(234, 85%, 45%);
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* Card */
-body>div.card{
-    display: flex;
-    flex-direction: row;
-    box-shadow: 5px 10px 40px rgb(107, 107, 255);
-    border-radius: 20px;
-    /* border: 5px solid black; */
+body>div.card {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 10px 40px var(--Pale_blue);
+  border-radius: 20px;
+  /* border: 5px solid black; */
 }
 /* Main Card */
-div.card_main{
-    height: 500px;
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #ffff;
-    border-radius: 20px;
-    background-color: rgb(80, 9, 211);
+div.card_main {
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--White);
+  border-radius: 20px;
+  background:linear-gradient(to top, var(--Light_royal_blue_background),var(--Light_slate_blue_background));
 }
-div.item_Tittle{
-    font-weight: 600;
-    font-size: 18px;
-    color: rgb(177, 141, 243);
+div.item_Tittle {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(177, 141, 243);
 }
 /* Circulo central */
-div.item_center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 200px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #ffff;
-    border-radius: 50%;
-    background: rgb(90,12,156);
-    background: linear-gradient(0deg, rgba(90,12,156,1) 58%, rgba(2,5,51,1) 90%); 
+div.item_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--White);
+  border-radius: 50%;
+  background: linear-gradient(to bottom, var(--Violet_blue_circle), var(--Persian_blue_circle));
 }
-div.centerP{
-    font-size: 70px;
+div.centerP {
+  font-size: 70px;
 }
-div.item_center>span{
-    color: rgb(177, 141, 243);
+div.item_center > span {
+  color: var(--Light_lavender);
 }
 /* Posterior carta principal */
-div.item_status{
-    font-weight: 800;
-    font-size: 40px;
+div.item_status {
+  font-weight: 800;
+  font-size: 40px;
 }
-div.item_Text{
-    text-align: center;
-    color: rgb(177, 141, 243);
+div.item_Text {
+  text-align: center;
+  color: rgb(177, 141, 243);
 }
 /* second card */
-div.card_second{
-    height: 500px;
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 20px 20px 0 ;
-    /* border: 1px solid red ; */
+div.card_second {
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  /* border: 1px solid red ; */
 }
-div.card_second>div.item{
-    padding: 10px;
-    margin: 10px;
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 10px;
+div.card_second > div.item {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 10px;
 }
-div.item_next{
-    /* letter-spacing: 5px; */
-    text-align: center;
-    width: 80%;
-    font-weight: 900;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 50px;
-    color: #ffff;
-    background-color: black;
+div.item_next {
+  /* letter-spacing: 5px; */
+  text-align: center;
+  width: 80%;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50px;
+  color: #ffff;
+  background-color: var(--Dark_gray_blue);
 }
