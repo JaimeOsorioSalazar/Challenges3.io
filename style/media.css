@@ -1,0 +1,21 @@
+@media (width < 375px) {
+  body > div.card > div.card_main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width > 375px) {
+  body {
+    height: 100vh;
+  }
+  body > div.card {
+    display: flex;
+    flex-direction: row;
+  }
+  body > div.card > div.card_main {
+  height: auto;
+  width: 100%;
+    border-radius: 20px;
+  }
+
+}

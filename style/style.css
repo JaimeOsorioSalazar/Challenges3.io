@@ -39,7 +39,7 @@
 }
 body {
   font-family: "Hanken Grotesk", sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,24 +47,23 @@ body {
 }
 /* Card */
 body > div.card {
-    height: 460px;
-  display: flex;
-  flex-direction: row;
+  height: 460px;
   box-shadow: 5px 10px 40px var(--Pale_blue);
   border-radius: 20px;
   /* border: 5px solid black; */
 }
 /* Main Card */
 div.card_main {
-  height: auto;
-  width: 300px;
+  height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: var(--White);
-  border-radius: 20px;
-  background: linear-gradient( to top,
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(
+    to top,
     var(--Light_royal_blue_background),
     var(--Light_slate_blue_background)
   );
@@ -100,7 +99,7 @@ div.item_center > span {
 }
 /* Posterior carta principal */
 div.item_status {
-    padding: 0;
+  padding: 0;
   font-weight: 600;
   font-size: 30px;
 }
@@ -112,7 +111,7 @@ div.item_Text {
 /* second card */
 div.card_second {
   height: 500px;
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,7 +119,7 @@ div.card_second {
   border-radius: 0 20px 20px 0;
   /* border: 1px solid red ; */
 }
-div.card_second > h2{
+div.card_second > h2 {
   width: 80%;
   margin: 20px 30px 0;
 }
@@ -137,40 +136,48 @@ div.card_second > div.item {
   /* box-shadow: 1px 1px 10px black; */
   border-radius: 10px;
 }
-.iNumber{
+.iNumber {
   color: black;
 }
-div.card_second > div.item > div >  span{
+div.card_second > div.item > div > span {
   text-align: end;
   /* margin: 0 20px ; */
   color: gray;
 }
-div.item_next {
+button.item_next {
   /* letter-spacing: 5px; */
   text-align: center;
   width: 80%;
-  font-weight: 900;
+  font-weight: 200;
   font-size: 18px;
-  margin: 20px 0 ;
+  margin: 20px 0;
   padding: 15px;
+  border: none;
   border-radius: 50px;
   color: #ffff;
   background-color: var(--Dark_gray_blue);
 }
+button.item_next:hover {
+  background: linear-gradient(
+    to top,
+    var(--Light_royal_blue_background),
+    var(--Light_slate_blue_background)
+  );
+}
 /* Colores especificos */
-div.itemReaction{
+div.itemReaction {
   background-color: hsla(0, 100%, 67%, 0.1);
   color: var(--Light_red);
 }
-div.itemMemory{
-  background-color: hsla(39, 100%, 56%, 0.1) ;
+div.itemMemory {
+  background-color: hsla(39, 100%, 56%, 0.1);
   color: var(--Orangey_yellow);
 }
-div.itemVerbal{
+div.itemVerbal {
   background-color: hsla(166, 100%, 37%, 0.1);
   color: var(--Green_teal);
 }
-div.itemVisual{
+div.itemVisual {
   background-color: hsla(234, 85%, 45%, 0.1);
   color: var(--Dark_gray_blue);
 }
