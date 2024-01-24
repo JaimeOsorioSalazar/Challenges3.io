@@ -1,7 +1,13 @@
 @media (width < 375px) {
+  body > div.card{
+    height: auto;
+  }
   body > div.card > div.card_main {
     display: flex;
     flex-direction: column;
+  }
+  body > div.attribution{
+    display: none;
   }
 }
 @media (width > 375px) {
@@ -17,5 +23,4 @@
   width: 100%;
     border-radius: 20px;
   }
-
 }
