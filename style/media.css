@@ -1,13 +1,17 @@
 @media (width < 375px) {
-  body > div.card{
+  body > div.card {
     height: auto;
   }
   body > div.card > div.card_main {
     display: flex;
     flex-direction: column;
   }
-  body > div.attribution{
+  body > div.attribution {
     display: none;
+  }
+  button.item_next{
+    border: none;
+    border-style: none;
   }
 }
 @media (width > 375px) {
@@ -19,8 +23,8 @@
     flex-direction: row;
   }
   body > div.card > div.card_main {
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
     border-radius: 20px;
   }
 }
